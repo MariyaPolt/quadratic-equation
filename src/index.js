@@ -7,7 +7,7 @@ module.exports = function solveEquation(equation) {
   resultArray = [];
   resultArray.push( Math.round( (-b + Math.sqrt(b*b - 4*a*c)) / (2 * a) ) );
   resultArray.push( Math.round( (-b - Math.sqrt(b*b - 4*a*c)) / (2 * a) ) );
-  resultArray.sort( (a, b) => a - b; );
+  resultArray.sort( function(a, b) { return a - b; } );
 
   return resultArray;
 }
